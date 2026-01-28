@@ -1,6 +1,6 @@
 # 🛒 Sales Forecasting & Food Waste Reduction
 
-📌 Project Overview
+## 📌 Project Overview
 
 Food retailers face a critical challenge: balancing product availability with minimizing food waste.
 Overstocking leads to waste and financial loss, while understocking results in lost sales and poor customer experience.
@@ -13,7 +13,7 @@ Estimate food waste caused by overstocking
 
 Evaluate how forecasting can reduce waste and cost
 
-🎯 Business Problem
+## 🎯 Business Problem
 
 The grocery store currently relies on manual or heuristic-based inventory planning that does not fully account for:
 
@@ -25,7 +25,7 @@ Product-level differences
 
 As a result, perishable items are frequently overstocked, leading to unnecessary food waste.
 
-🎯 Objectives
+## 🎯 Objectives
 
 Analyze historical grocery sales data to understand demand patterns
 
@@ -37,7 +37,7 @@ Compare waste levels before vs after forecast-based planning
 
 Provide actionable business recommendations
 
-📊 Dataset
+## 📊 Dataset
 
 Source: Kaggle – Supermarket Sales Dataset
 Granularity: Transaction-level grocery sales
@@ -59,9 +59,8 @@ branch
 
 customer_type
 
-⚠️ Note: The dataset does not directly include food waste. Waste is estimated using demand-based assumptions, similar to real-world retail operations.
 
-🧹 Data Cleaning
+## 🧹 Data Cleaning
 
 Standardized column names
 
@@ -73,7 +72,7 @@ Validated numeric fields (quantity, price, sales)
 
 Aggregated transaction data into daily product-level demand
 
-🔍 Exploratory Data Analysis (EDA)
+## 🔍 Exploratory Data Analysis (EDA)
 
 Key insights from EDA:
 
@@ -87,7 +86,7 @@ Some products exhibit high demand volatility, increasing waste risk
 
 A small subset of product lines contributes to a large portion of sales and waste
 
-🔮 Demand Forecasting
+## 🔮 Demand Forecasting
 
 Implemented Facebook Prophet for daily demand forecasting
 
@@ -101,7 +100,7 @@ Evaluated forecast accuracy using MAE and MAPE
 
 Prophet was selected for its interpretability and suitability for business forecasting.
 
-🗑️ Food Waste Estimation Logic
+## 🗑️ Food Waste Estimation Logic
 
 Since waste data was not available, a realistic estimation approach was used.
 
@@ -119,7 +118,7 @@ Waste Formula
 Stocked Quantity = Forecasted Demand × (1 + Safety Stock)
 Waste = max(Stocked Quantity − Actual Sales, 0)
 
-📉 Waste Reduction Evaluation
+## 📉 Waste Reduction Evaluation
 
 Two scenarios were compared:
 
@@ -135,7 +134,7 @@ Waste reduction is especially strong for high-variability product lines
 
 Improved balance between availability and sustainability
 
-📌 Key Business Insights
+## 📌 Key Business Insights
 
 Forecast-driven inventory planning can reduce food waste without increasing stockouts
 
@@ -145,7 +144,7 @@ Inventory strategies should be product-specific, not uniform
 
 Data-driven planning supports both cost savings and sustainability goals
 
-✅ Actionable Recommendations
+## ✅ Actionable Recommendations
 
 Adopt demand forecasting models for daily inventory planning
 
@@ -157,13 +156,13 @@ Implement dynamic pricing or promotions for slow-moving items
 
 Continuously retrain models as new sales data becomes available
 
-🛠️ Tools & Technologies
+## 🛠️ Tools & Technologies
 
 Python (Pandas, NumPy)
 
 Matplotlib & Seaborn
 
-🚀 Future Improvements
+## 🚀 Future Improvements
 
 Add holiday and promotion features
 
@@ -175,7 +174,7 @@ Integrate real waste tracking data if available
 
 Deploy model as a simple inventory decision-support tool
 
-👤 Author
+## 👤 Author
 
 Amaya Gunawardhana
 Aspiring Data Scientist | Data Analytics & Forecasting
@@ -184,3 +183,4 @@ Aspiring Data Scientist | Data Analytics & Forecasting
 Facebook Prophet
 
 Jupyter Notebook
+
